@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "d126f258-380e-4119-8ad9-90be06a6ab93",
+		"name": "TestDotNet14",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5470099"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7072/api/Humanos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Humanos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Humanos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7072/api/Humanos/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Humanos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Humanos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7072/api/Humanos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"nombre\": \"\",\r\n            \"sexo\": \"\",\r\n            \"edad\": 0,\r\n            \"altura\": 0.0,\r\n            \"peso\": 0.0\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7072/api/Humanos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Humanos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7072/api/Humanos/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"nombre\": \"Nuevo\",\r\n            \"sexo\": \"Mujer\",\r\n            \"edad\": 20,\r\n            \"altura\": 0.0,\r\n            \"peso\": 0.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7072/api/Humanos/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Humanos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7072/api/Calculadora",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Calculadora/10/division/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Calculadora",
+						"10",
+						"division",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7072/api/Calculadora",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "numeroIzquierda",
+						"value": "34",
+						"type": "text"
+					},
+					{
+						"key": "operador",
+						"value": "suma",
+						"type": "text"
+					},
+					{
+						"key": "numeroDerecha",
+						"value": "34",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7072/api/Calculadora",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Calculadora"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
